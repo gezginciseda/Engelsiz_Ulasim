@@ -19,8 +19,7 @@ Route::get('tracks',[\App\Http\Controllers\Api\BusTimeController::class,'tracks'
 Route::get('bustimes',[\App\Http\Controllers\Api\BusTimeController::class,'bustimes']);
 
 
-Route::middleware('auth:api')->group(function ()
-{
+Route::middleware('auth:api')->group(function () {
 
 
     //Route::get('indexx',[\App\Http\Controllers\Api\TrackController::class,'index']);
